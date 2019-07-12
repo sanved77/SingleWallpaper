@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/com.mikhaellopez.circularprogressbar"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:layout_marginTop="5dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/grid_item_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"/>
+
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/cpGrid"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        app:cpb_progress="5"
+        app:cpb_background_color="#000"
+        app:cpb_background_progressbar_color="#000"
+        app:cpb_background_progressbar_width="3dp"
+        app:cpb_progressbar_color="#000"
+        app:cpb_progressbar_width="10dp" />
+
+    <TextView
+        android:id="@+id/percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="69%"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+
+        />
+
+
+    <!-- <ProgressBar
+        android:id="@+id/pbGrid"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dp"
+        android:layout_height="15dp"
+        android:layout_margin="3dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" /> -->
+
+</RelativeLayout>

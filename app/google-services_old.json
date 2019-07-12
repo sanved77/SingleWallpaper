@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "444897630361",
+    "firebase_url": "https://superheros-wallpapers-hd4k.firebaseio.com",
+    "project_id": "superheros-wallpapers-hd4k",
+    "storage_bucket": "superheros-wallpapers-hd4k.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444897630361:android:7766e6e1c0ec9750",
+        "android_client_info": {
+          "package_name": "org.techwindow.superhero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444897630361-mm0runfg9ls8s2q4amilcp8549nk57um.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.techwindow.superhero",
+            "certificate_hash": "59acd5cb2c41d7b934f182e5cac85fbe0535e64a"
+          }
+        },
+        {
+          "client_id": "444897630361-t7bf4alem05rhsjgsm140j17g64b9mn9.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "444897630361-l4j7kidsbckduc9hjd2hjkocp7mob2uk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwBWjfX7VQcOC7h8HQ02aLembsJ9sLKoM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": { "tracking_id": "" }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

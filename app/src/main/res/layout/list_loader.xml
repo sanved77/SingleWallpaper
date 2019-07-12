@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="97"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:theme="@style/ThemeToolbar"
+                android:background="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etSearchTermQues"
+                    android:layout_width="0px"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="11"
+                    android:paddingLeft="5dp"
+                    android:background="@color/grey_light"
+                    android:drawableRight="@drawable/ic_clear_black_36dp"
+                    android:gravity="center"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/bSearchQues"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_search_black_48dp" />
+
+                <ImageButton
+                    android:id="@+id/bDownloads"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:src="@drawable/ic_file_download_black_48dp" />
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@color/grey"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/rv"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- No result found -->
+            <TextView
+                android:id="@+id/tvNores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_marginTop="150dp"
+                android:textSize="30sp"
+                android:visibility="gone"
+                android:text="No results found"/>
+
+            <Button
+                android:id="@+id/bReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNores"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                android:text= "@string/snfb"
+                />
+
+            <!-- No Internet -->
+
+            <TextView
+                android:id="@+id/tvNoInt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Try reloading"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bReload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNoInt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Reload"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ads"
+        android:layout_weight="10"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_height="wrap_content"
+        ads:adUnitId="@string/banner_home_footer"
+        ads:adSize="BANNER">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "997837756368",
+    "firebase_url": "https://nature-wallpapers-hd-4k-c8e08.firebaseio.com",
+    "project_id": "nature-wallpapers-hd-4k-c8e08",
+    "storage_bucket": "nature-wallpapers-hd-4k-c8e08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997837756368:android:f1a7118687d4d4a4",
+        "android_client_info": {
+          "package_name": "org.wiseass.naturewallpapershd4k"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997837756368-1tqrlkp8vokto53mo6j6lggjarh18bli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQiRaCAZTLNatGR-qlkmlj90N65sBxEb0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp"
+
+    >
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/cvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardElevation="6dp"
+        android:layout_margin="1dp"
+        card_view:cardBackgroundColor="@color/grey"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:contentPadding="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:id="@+id/tvListName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Messi"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/numpics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvListName"
+                android:layout_marginTop="3dp"
+                android:text="42 pics"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

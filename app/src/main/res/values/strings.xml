@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Nature Wallpapers HD 4K</string>
+
+    <!-- Ad units -->
+    <string name="banner_home_footer">ca-app-pub-3018284056226952/1928726789</string>
+    <string name="full_page">ca-app-pub-3018284056226952/1545583401</string>
+
+    <string name="admob_app_id">ca-app-pub-3018284056226952~1776559838</string>
+
+    <!-- Used in email subject, share app, download folder name -->
+    <string name="name">Nature Wallpapers</string>
+
+    <!-- This goes into dialog box which asks user to enter what they want -->
+    <string name="to_add">Nature Wallpapers</string>
+
+    <!-- Folder name where we put the jsons -->
+    <string name="folder">nature</string>
+
+    <!-- Startscreen Options -->
+    <string name="startscr1">Nature Wallpapers</string>
+
+    <!-- JSONs Files -->
+    <!-- For testing, we are using avengers.json from Super folder -->
+    <string name="json1">normal.json</string>
+
+    <!-- This is for the search not found button -->
+    <string name="snfb">Request images for this Nature Wallpapers</string>
+
+    <!-- Menu item which appears on three dot press -->
+    <string name="suggest">Suggest Nature Wallpapers</string>
+
+</resources>
+

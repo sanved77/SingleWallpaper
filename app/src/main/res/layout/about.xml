@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_marginTop="15dp"
+            android:text="Disclaimer"
+            android:id="@+id/tv1"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Disclaimer - All logos/images/names are copyrights of their perspective owners. These images are not endorsed by any of the perspective owners, and the images are used simply for aesthetic purposes. No copyright infringement is intended, and any request to remove one of the images/logos/names will be honored. None of the images are hosted on the app. Each and every image is hotlinked from a source where hotlinking is allowed. "
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv2"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Request Image take-down"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="If you are a photographer or a digital artist and you want your photo/art/image to be taken down. Press the button below to email me regarding it. The link to this image in the app will be removed from the app within 2 business days. "
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/bEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Email" />
+
+
+
+    </LinearLayout>
+</ScrollView>
