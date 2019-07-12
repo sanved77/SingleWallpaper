@@ -11,7 +11,7 @@
     <string name="name">Nature Wallpapers</string>
 
     <!-- This goes into dialog box which asks user to enter what they want -->
-    <string name="to_add">Nature Wallpapers</string>
+    <string name="to_add">NatureWallpapers</string>
 
     <!-- Folder name where we put the jsons -->
     <string name="folder">nature</string>

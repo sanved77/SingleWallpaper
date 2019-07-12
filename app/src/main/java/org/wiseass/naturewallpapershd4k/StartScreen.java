@@ -149,8 +149,11 @@ public class StartScreen extends AppCompatActivity implements CardView.OnClickLi
         pri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(StartScreen.this, PrivacyPolicy.class);
-                startActivity(i);
+//                Intent i = new Intent(StartScreen.this, PrivacyPolicy.class);
+//                startActivity(i);
+                String url = "http://wiseass.co.in/privacy.php?" + getString(R.string.to_add);
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(browserIntent);
             }
         });
 
