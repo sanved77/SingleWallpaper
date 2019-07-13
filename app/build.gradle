@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
 
     defaultConfig {
-        applicationId "org.wiseass.naturewallpapershd4k"
+        applicationId "org.wiseass.lordganeshawallpapershd4k"
         minSdkVersion 16
-        targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        targetSdkVersion 28
+        versionCode 2
+        versionName "2.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -22,12 +22,12 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
-    implementation 'com.android.support:appcompat-v7:27.1.0'
-    implementation 'com.android.support:animated-vector-drawable:27.1.0'
-    implementation "com.android.support:design:27.1.0"
-    implementation 'com.android.support:customtabs:27.1.0'
-    implementation 'com.android.support:cardview-v7:27.1.0'
-    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.github.yalantis:ucrop:2.2.2-native'
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'

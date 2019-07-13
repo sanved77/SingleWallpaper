@@ -1,39 +1,37 @@
 {
   "project_info": {
-    "project_number": "997837756368",
-    "firebase_url": "https://nature-wallpapers-hd-4k-c8e08.firebaseio.com",
-    "project_id": "nature-wallpapers-hd-4k-c8e08",
-    "storage_bucket": "nature-wallpapers-hd-4k-c8e08.appspot.com"
+    "project_number": "1028401579380",
+    "firebase_url": "https://lord-ganesha-wallpapers-3b13c.firebaseio.com",
+    "project_id": "lord-ganesha-wallpapers-3b13c",
+    "storage_bucket": "lord-ganesha-wallpapers-3b13c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:997837756368:android:f1a7118687d4d4a4",
+        "mobilesdk_app_id": "1:1028401579380:android:b0eef10bf8df3836",
         "android_client_info": {
-          "package_name": "org.wiseass.naturewallpapershd4k"
+          "package_name": "org.wiseass.lordganeshawallpapershd4k"
         }
       },
       "oauth_client": [
         {
-          "client_id": "997837756368-1tqrlkp8vokto53mo6j6lggjarh18bli.apps.googleusercontent.com",
+          "client_id": "1028401579380-dha1d7d1kdsvcaulorurrim8erhl4crc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBQiRaCAZTLNatGR-qlkmlj90N65sBxEb0"
+          "current_key": "AIzaSyDzSSnb5Pm04fdw3JEtpjJjI2vS-6DKPGw"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028401579380-dha1d7d1kdsvcaulorurrim8erhl4crc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
