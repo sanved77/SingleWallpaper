@@ -12,18 +12,13 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name="org.wiseass.lordganeshawallpapershd4k.MyApp"
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
-        <!--
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-            -->
+
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -56,42 +51,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
-        <!-- Analytics -->
-
-        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
-            android:enabled="true">
-            <intent-filter>
-                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
-            </intent-filter>
-        </receiver>
-        <service android:name="com.google.android.gms.analytics.AnalyticsService"
-            android:enabled="true"
-            android:exported="false"/>
-
-        <receiver android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER" />
-            </intent-filter>
-        </receiver>
-        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
 
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
 
-        <!-- Auto-Start -->
-
-        <receiver
-            android:name=".receiver.AutoStart"
-            android:enabled="true"
-            android:exported="true"
-            android:label="StartMyServiceAtBootReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
 
     </application>
 
