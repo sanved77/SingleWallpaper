@@ -105,7 +105,7 @@ public class About extends AppCompatActivity {
 
         link.setClickable(true);
         link.setMovementMethod(LinkMovementMethod.getInstance());
-        String text = "<a href='http://www.wiseassenterprises.com'> App developed by WiseAss Enterprises </a>";
+        String text = "<a href='http://www.wiseass.co.in/'> App developed by Wiseass Inc </a>";
         link.setText(Html.fromHtml(text));
     }
 }
