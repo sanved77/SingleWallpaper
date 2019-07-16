@@ -15,17 +15,19 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-/*
-import com.google.android.gms.analytics.HitBuilders;
-import com.google.android.gms.analytics.Tracker;*/
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.squareup.picasso.Picasso;
@@ -44,6 +46,10 @@ import java.net.MalformedURLException;
 import java.net.SocketTimeoutException;
 import java.net.URL;
 import java.util.ArrayList;
+
+/*
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;*/
 
 public class StartScreen extends AppCompatActivity implements CardView.OnClickListener {
 
@@ -156,6 +162,19 @@ public class StartScreen extends AppCompatActivity implements CardView.OnClickLi
                 startActivity(browserIntent);
             }
         });
+
+        FirebaseMessaging.getInstance().setAutoInitEnabled(true);
+
+        FirebaseMessaging.getInstance().subscribeToTopic("nagdibai")
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+
+                        Log.d("StartScreen", "Subscribed to Notifications");
+                        Toast.makeText(StartScreen.this, "Subscribed to Notifications", Toast.LENGTH_SHORT).show();
+
+                    }
+                });
 
     }
 
