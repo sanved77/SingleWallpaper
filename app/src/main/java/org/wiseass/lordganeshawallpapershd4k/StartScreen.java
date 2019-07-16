@@ -165,14 +165,18 @@ public class StartScreen extends AppCompatActivity implements CardView.OnClickLi
 
         FirebaseMessaging.getInstance().setAutoInitEnabled(true);
 
-        FirebaseMessaging.getInstance().subscribeToTopic("nagdibai")
+        FirebaseMessaging.getInstance().subscribeToTopic("allwallpapers")
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-
-                        Log.d("StartScreen", "Subscribed to Notifications");
-                        Toast.makeText(StartScreen.this, "Subscribed to Notifications", Toast.LENGTH_SHORT).show();
-
+                        Log.d("StartScreen", "Subscribed to generic Notifications");
+                    }
+                });
+        FirebaseMessaging.getInstance().subscribeToTopic(getString(R.string.folder))
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        Log.d("StartScreen", "Subscribed to app Notifications");
                     }
                 });
 
