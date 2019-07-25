@@ -341,6 +341,8 @@ public class ActionScreen extends AppCompatActivity {
         abc = Uri.fromFile(new File(getCacheDir(), "1"));
 
         options = new UCrop.Options();
+        options.setCompressionQuality(100);
+        options.setMaxBitmapSize(10000);
         options.setToolbarColor(ContextCompat.getColor(this, R.color.white));
         options.setStatusBarColor(ContextCompat.getColor(this, R.color.white));
         options.setActiveWidgetColor(ContextCompat.getColor(this, R.color.black));
